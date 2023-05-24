@@ -1,4 +1,4 @@
-name : Shivam-CI/CD
+name: Shivam-CI/CD
 
 on:
  workflow_dispatch:
@@ -8,12 +8,12 @@ on:
  
 jobs:
   Shivam-Runner:
-    runs-on : ubantu-latest
+    runs-on: ubantu-latest
 
     steps:
-     - name : checkout
-     - uses : action/checkout@v3
+     - name: checkout
+     - uses: action/checkout@v3
      
-     - name : open file first.txt
-     - run : nano first.txt
+     - name: open file first.txt
+     - run: nano first.txt
      
