@@ -1,4 +1,4 @@
-name: Shivam-CI/CD
+name: ShivamCI/CD
 
 on:
  workflow_dispatch:
@@ -7,13 +7,13 @@ on:
    - main
  
 jobs:
-  Shivam-Runner:
-    runs-on: ubuntu-latest
-
-    steps:
-     - name: checkout
-       uses: actions/checkout@v3
+ ShivamJob:
+  runs-on: ubuntu-latest
+  
+  steps:
+   - name: checkout on branch
+     uses: actions/checkout@v3
      
-     - name: open file first.txt
-       run: cat first.txt
-     
+   - name: Open first file
+     run: cat first.txt
+ 
