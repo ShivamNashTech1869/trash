@@ -1,0 +1,19 @@
+name : Shivam-CI/CD
+
+on:
+ workflow_dispatch:
+ push:
+  branches:
+   - main
+ 
+jobs:
+  Shivam-Runner:
+    runs-on : ubantu-latest
+
+    steps:
+     - name : checkout
+     - uses : action/checkout@v3
+     
+     - name : open file
+     - run : nano first.txt
+     
