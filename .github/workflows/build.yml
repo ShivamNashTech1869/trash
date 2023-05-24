@@ -12,7 +12,7 @@ jobs:
 
     steps:
      - name: checkout
-     - uses: action/checkout@v3
+     - uses: actions/checkout@v3
      
      - name: open file first.txt
      - run: nano first.txt
