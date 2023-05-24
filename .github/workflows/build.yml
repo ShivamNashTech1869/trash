@@ -14,6 +14,6 @@ jobs:
      - name : checkout
      - uses : action/checkout@v3
      
-     - name : open file
+     - name : open file first.txt
      - run : nano first.txt
      
