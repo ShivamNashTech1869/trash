@@ -1,0 +1,18 @@
+name: Postman(CI/CD)
+
+on:
+ workflow_dispatch:
+ push:
+  branches:
+   - featur/Postman
+   
+jobs:
+ postman-runner:
+  runs-on: ubuntu-latest
+  
+  steps:
+    - name: checkout on code
+      uses: actions/checkout@v3
+      
+    - name: run collection
+      run: newman run DemoMock.postman_collection.json
