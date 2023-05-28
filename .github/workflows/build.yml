@@ -8,7 +8,7 @@ on:
  
 jobs:
  ShivamJobSelenium:
-  runs-on: ubuntu-latest
+  runs-on: ubuntu-lates
   
   steps:
    - name: checkout on branch
