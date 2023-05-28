@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "4f5206a6-344b-4ec1-9a9f-f97e1ec3d2bc",
+		"name": "DemoMock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26777351",
+		"_collection_link": "https://orange-resonance-63468.postman.co/workspace/Practice-on-Mock-Server~1da08946-7e8b-4a62-832a-d04157ab99ce/collection/26777351-4f5206a6-344b-4ec1-9a9f-f97e1ec3d2bc?action=share&creator=26777351&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dd606f50-9aa5-4ed3-81a1-c322b045f199.mock.pstmn.io/get",
+							"protocol": "https",
+							"host": [
+								"dd606f50-9aa5-4ed3-81a1-c322b045f199",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\"Name\":\"Shivam\",\"Job\":\"Knolder\"}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dd606f50-9aa5-4ed3-81a1-c322b045f199.mock.pstmn.io/get/1",
+							"protocol": "https",
+							"host": [
+								"dd606f50-9aa5-4ed3-81a1-c322b045f199",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"get",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"null\"}"
+				}
+			]
+		},
+		{
+			"name": "creat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/post",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "creat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dd606f50-9aa5-4ed3-81a1-c322b045f199.mock.pstmn.io/post",
+							"protocol": "https",
+							"host": [
+								"dd606f50-9aa5-4ed3-81a1-c322b045f199",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"Created\"}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://dd606f50-9aa5-4ed3-81a1-c322b045f199.mock.pstmn.io"
+		}
+	]
+}
